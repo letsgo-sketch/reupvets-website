@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReUpVets - Reconnecting Veterans</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+            border-radius: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            font-size: 48px;
+            font-weight: bold;
+            color: #1e293b;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.25rem;
+            color: #94a3b8;
+            margin-bottom: 40px;
+        }
+        
+        .hero-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #cbd5e1;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+        
+        .feature {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+        
+        .feature h3 {
+            color: #f59e0b;
+            margin-bottom: 8px;
+        }
+        
+        .feature p {
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+        
+        .app-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+        
+        .app-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            color: #1e293b;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s;
+        }
+        
+        .app-button:hover {
+            transform: scale(1.05);
+        }
+        
+        .app-button.coming-soon {
+            background: #334155;
+            color: #94a3b8;
+            cursor: default;
+        }
+        
+        .app-button.coming-soon:hover {
+            transform: none;
+        }
+        
+        .crisis-banner {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .crisis-banner h3 {
+            color: #ef4444;
+            margin-bottom: 8px;
+        }
+        
+        .crisis-banner p {
+            color: #cbd5e1;
+        }
+        
+        .crisis-banner a {
+            color: #f59e0b;
+            font-weight: bold;
+        }
+        
+        footer {
+            border-top: 1px solid #334155;
+            padding-top: 30px;
+            color: #64748b;
+        }
+        
+        footer a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+        
+        footer a:hover {
+            color: #f59e0b;
+        }
+        
+        .footer-links {
+            margin-bottom: 20px;
+        }
+        
+        .copyright {
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">RU</div>
+        
+        <h1>ReUpVets</h1>
+        <p class="tagline">Reconnecting Those Who Served</p>
+        
+        <p class="hero-text">
+            ReUpVets helps military veterans reconnect with battle buddies, 
+            find others who served in their unit, and build a supportive community. 
+            Because no veteran should feel alone.
+        </p>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🔍</div>
+                <h3>Find Your People</h3>
+                <p>Search by unit, base, branch, or location to find veterans you served with.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">💬</div>
+                <h3>Stay Connected</h3>
+                <p>Direct messages, unit chats, and group conversations keep you in touch.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📅</div>
+                <h3>Meet Up IRL</h3>
+                <p>Discover local events, reunions, and meetups with fellow veterans.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">❤️</div>
+                <h3>Look Out for Each Other</h3>
+                <p>Buddy check-ins and crisis resources available 24/7.</p>
+            </div>
+        </div>
+        
+        <div class="app-buttons">
+            <a href="#" class="app-button coming-soon">
+                <span>📱</span> App Store - Coming Soon
+            </a>
+            <a href="#" class="app-button coming-soon">
+                <span>🤖</span> Google Play - Coming Soon
+            </a>
+        </div>
+        
+        <div class="crisis-banner">
+            <h3>Veterans Crisis Line</h3>
+            <p>If you or someone you know is in crisis, call <a href="tel:988">988</a> and press 1, or text 838255.</p>
+        </div>
+        
+        <footer>
+            <div class="footer-links">
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Service</a>
+                <a href="mailto:support@reupvets.com">Contact</a>
+            </div>
+            <p class="copyright">&copy; 2026 ReUpVets. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
